@@ -59,3 +59,8 @@ $(call inherit-product-if-exists, vendor/sony/pollux/pollux-vendor.mk)
 
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
+PRODUCT_NAME := full_sgp311
+PRODUCT_DEVICE := sgp311
+PRODUCT_BRAND := Sony
+PRODUCT_MODEL := Xperia Tablet Z
+PRODUCT_MANUFACTURER := Sony
