@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-add_lunch_combo full_sgp311-eng
-add_lunch_combo full_sgp311-userdebug
-add_lunch_combo full_sgp311-user
-add_lunch_combo full_sgp321-eng
-add_lunch_combo full_sgp321-userdebug
-add_lunch_combo full_sgp321-user
+#add_lunch_combo full_sgp311-eng
+#add_lunch_combo full_sgp311-userdebug
+#add_lunch_combo full_sgp311-user
+#add_lunch_combo full_sgp321-eng
+#add_lunch_combo full_sgp321-userdebug
+#add_lunch_combo full_sgp321-user
