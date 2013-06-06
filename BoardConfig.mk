@@ -14,7 +14,7 @@
 
 include device/sony/lagan/BoardConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := SGP311
+TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP311,Pollux,pollux
