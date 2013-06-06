@@ -62,6 +62,7 @@ done
 DEVICE_PACKAGE_OVERLAYS := vendor/$VENDOR/$DEVICE/overlay
 
 \$(call inherit-product, vendor/$VENDOR/$DEVICE/$DEVICE-vendor-blobs.mk)
+\$(call inherit-product, vendor/$VENDOR/lagan/lagan-vendor-blobs.mk)
 EOF
 
 (cat << EOF) > ../../../$OUTDIR/BoardConfigVendor.mk
