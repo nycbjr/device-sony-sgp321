@@ -24,9 +24,10 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/sgp311/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/sgp311/bluetooth
 
 # Try to build the kernel
-#TARGET_KERNEL_SOURCE := kernel/sony/sgp311
+TARGET_KERNEL_SOURCE := kernel/sony/sgp311
+TARGET_KERNEL_CONFIG := bjr_fusion3_pollux_windy_defconfig
 # Prebuilt Kernel Fallback
-TARGET_PREBUILT_KERNEL := device/sony/sgp311/kernel
+#TARGET_PREBUILT_KERNEL := device/sony/sgp311/kernel
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
