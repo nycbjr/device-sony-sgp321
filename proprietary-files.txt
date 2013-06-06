@@ -1,13 +1,9 @@
 lib/libOmxVenc.so
-lib/modules/wlan.ko
 etc/wifi/wpa_supplicant.conf
 etc/hw_config.sh
 etc/init.qcom.bt.sh
 etc/init.qcom.fm.sh
 etc/pre_hw_config.sh
-etc/audio_effects.conf
-etc/audio_policy.conf
-etc/audio_policy_8064.conf
 bin/remount
 bin/mac-update
 bin/illumination_service
