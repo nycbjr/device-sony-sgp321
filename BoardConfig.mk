@@ -15,9 +15,10 @@
 include device/sony/lagan/BoardConfig.mk
 
 #TARGET_BOOTLOADER_BOARD_NAME := MSM8960
+TARGET_NO_BOOTLOADER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := sgp311
+TARGET_OTA_ASSERT_DEVICE := SGP311
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/sgp311/include
 
