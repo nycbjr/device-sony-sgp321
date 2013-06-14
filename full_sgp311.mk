@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The Android Open Source Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,53 +11,32 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+#
+# This file is the build configuration for a full Android
+# build for maguro hardware. This cleanly combines a set of
+# device-specific aspects (drivers) with a device-agnostic
+# product configuration (apps). Except for a few implementation
+# details, it only fundamentally contains two inherit-product
+# lines, full and maguro, hence its name.
+#
+#
 
-$(call inherit-product, device/sony/lagan/device_tablet.mk)
-$(call inherit-product, vendor/sony/sgp311/sgp311-vendor.mk)
-$(call inherit-product-if-exists, vendor/sony/sgp311/device-vendor.mk)
+TARGET_SCREEN_HEIGHT := 1200
+TARGET_SCREEN_WIDTH := 1920
 
-PRODUCT_LOCALES += hdpi
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+ 
+# Common Sony Resources
+$(call inherit-product, device/sony/sgp3xx-common/resources-xxhdpi.mk)
 
-#TARGET_PREBUILT_KERNEL ?= kernel
-#PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(TARGET_PREBUILT_KERNEL):kernel
+# Inherit from pollux_windy device
+$(call inherit-product, device/sony/sgp311/sgp311.mk)
 
-# Prebuilt kernel location
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-        LOCAL_KERNEL := device/sony/sgp311/kernel
-else
-        LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/rootdir/logo.rle:root/logo.rle \
-    $(LOCAL_PATH)/rootdir/system/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
-    $(LOCAL_PATH)/rootdir/system/etc/sensors.conf:system/etc/sensors.conf \
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240 \
-    fw.max_users=8 \
-
-PRODUCT_PACKAGE_OVERLAYS += device/sony/sgp311/overlay
-
-SOMC_CFG_SENSORS_LIGHT_LM3533 := yes
-SOMC_CFG_SENSORS_LIGHT_MAXRANGE := 1000
-SOMC_CFG_SENSORS_LIGHT_LM3533_PATH := /sys/bus/i2c/devices/0-0036
-
-SOMC_CFG_SENSORS_PROXIMITY_APDS9702 := yes
-
-SOMC_CFG_SENSORS_ACCEL_BMA250_INPUT := yes
-
-# Device specific part for two-stage boot
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
-
-$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
-
+# Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_sgp311
 PRODUCT_DEVICE := sgp311
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia Tablet Z
 PRODUCT_MANUFACTURER := Sony
+PRODUCT_MODEL := SGP311

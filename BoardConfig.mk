@@ -1,4 +1,4 @@
-# Copyright 2013 The Android Open Source Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,35 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/lagan/BoardConfig.mk
+# inherit from the common pollux definitions
+-include device/sony/sgp3xx-common/BoardConfigCommon.mk
 
-#TARGET_BOOTLOADER_BOARD_NAME := MSM8960
-TARGET_NO_BOOTLOADER := true
+# inherit from the proprietary version
+-include vendor/sony/sgp311/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP311
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/sgp311/include
-
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/sgp311/bluetooth
-
-# Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/sony/apq8064
-TARGET_KERNEL_CONFIG := cm_fusion3_pollux_windy_defconfig
-# Prebuilt Kernel Fallback
-#TARGET_PREBUILT_KERNEL := device/sony/sgp311/kernel
-
-# Partition information
-BOARD_VOLD_MAX_PARTITIONS := 26
-
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12425608704
-BOARD_CACHEIMAGE_PARTITION_SIZE := 576716800
-
-DEVICE_RESOLUTION := 1920x1200
-SOMC_CFG_SENSORS_PROXIMITY_APDS9702 := false
-
-# inherit from the proprietary version
--include vendor/sony/sgp311/BoardConfigVendor.mk
+TARGET_KERNEL_CONFIG := bjr_fusion3_pollux_windy_defconfig
