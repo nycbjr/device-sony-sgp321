@@ -36,7 +36,7 @@ $(call inherit-product, device/sony/sgp311/sgp311.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_sgp311
-PRODUCT_DEVICE := sgp311
+PRODUCT_DEVICE := pollux_windy
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := SGP311
