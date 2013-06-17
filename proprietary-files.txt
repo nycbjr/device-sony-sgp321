@@ -7,6 +7,9 @@ bin/fm_qsoc_patches
 bin/fmconfig
 bin/hci_qcomm_init
 bin/mpdecision
+bin/netmgrd
+bin/rild
+bin/illumination_service
 bin/qmuxd
 bin/qseecomd
 bin/rmt_storage
