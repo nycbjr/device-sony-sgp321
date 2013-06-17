@@ -1,5 +1,7 @@
-# Make keys in CWM repeatable
-ro.cwm.enable_key_repeat=true
-
-# Graphics
-ro.sf.lcd_density=240
+# Addidional info for Settings/About/Hardware
+ro.device.chipset=Qualcomm APQ8064 Snapdragon
+ro.device.cpu=Quad-core 1.5 GHz S4 Pro
+ro.device.gpu=Adreno 320
+ro.device.front_cam=2.2MP, 1080p
+ro.device.rear_cam=8.1MP, 1080p
+ro.device.screen_res=1920 x 1200 pixels, 10.1 BRAVIA LED 
