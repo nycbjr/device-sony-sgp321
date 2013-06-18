@@ -68,7 +68,7 @@ etc/firmware/wcd9310/wcd9310_mbhc.bin
 etc/flashled_calc_parameters.cfg
 lib/hw/camera.msm8960.so
 lib/hw/camera.qcom.so
-lib/hw/gps.default.so
+#lib/hw/gps.default.so
 lib/hw/nfc.msm8960.so
 lib/libMPU3050.so
 lib/libMiscTaAccessor.so
@@ -95,7 +95,7 @@ lib/libface.so
 lib/libfmradio.so
 lib/libfmradio.sony-iris.so
 lib/libgemini.so
-lib/libgps.utils.so
+#lib/libgps.utils.so
 lib/libidd.so
 lib/libidl.so
 lib/libimage-jpeg-dec-omx-comp.so
@@ -103,9 +103,9 @@ lib/libimage-jpeg-enc-omx-comp.so
 lib/libimage-omx-common.so
 lib/libkeyctrl.so
 lib/liblights-core.so
-lib/libloc_adapter.so
-lib/libloc_api_v02.so
-lib/libloc_eng.so
+#lib/libloc_adapter.so
+#lib/libloc_api_v02.so
+#lib/libloc_eng.so
 lib/libmercury.so
 lib/libmiscta.so
 lib/libmllite.so
