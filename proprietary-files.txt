@@ -104,6 +104,7 @@ lib/libface.so
 lib/libfmradio.so
 lib/libfmradio.sony-iris.so
 lib/libgemini.so
+lib/libnetmgr.so
 lib/libril-qc-qmi-1.so
 lib/libidd.so
 lib/libidl.so
