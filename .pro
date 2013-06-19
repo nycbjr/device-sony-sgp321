@@ -3,11 +3,6 @@ bin/cal_data_manager
 bin/chargemon
 bin/clearpad_fwloader
 bin/ds_fmc_appd
-bin/ssr_diag
-bin/qmiproxy
-bin/cnd
-bin/bridgemgrd
-bin/ATFWD-daemon
 bin/fm_qsoc_patches
 bin/fmconfig
 bin/hci_qcomm_init
@@ -100,7 +95,7 @@ lib/libface.so
 lib/libfmradio.so
 lib/libfmradio.sony-iris.so
 lib/libgemini.so
-lib/libril-qc-qmi-1.so
+#lib/libgps.utils.so
 lib/libidd.so
 lib/libidl.so
 lib/libimage-jpeg-dec-omx-comp.so
@@ -108,7 +103,9 @@ lib/libimage-jpeg-enc-omx-comp.so
 lib/libimage-omx-common.so
 lib/libkeyctrl.so
 lib/liblights-core.so
-lib/libloc_api_v02.so
+#lib/libloc_adapter.so
+#lib/libloc_api_v02.so
+#lib/libloc_eng.so
 lib/libmercury.so
 lib/libmiscta.so
 lib/libmllite.so
