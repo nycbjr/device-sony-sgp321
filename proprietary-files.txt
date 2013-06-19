@@ -73,7 +73,6 @@ etc/firmware/wcd9310/wcd9310_mbhc.bin
 etc/flashled_calc_parameters.cfg
 lib/hw/camera.msm8960.so
 lib/hw/camera.qcom.so
-#lib/hw/gps.default.so
 lib/hw/nfc.msm8960.so
 lib/libMPU3050.so
 lib/libMiscTaAccessor.so
