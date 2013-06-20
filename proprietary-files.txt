@@ -15,6 +15,7 @@ bin/mpdecision
 bin/netmgrd
 bin/rild
 bin/illumination_service
+bin/time_daemon
 bin/qmuxd
 bin/qseecomd
 bin/dxhdcpd
