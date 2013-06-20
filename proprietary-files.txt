@@ -17,6 +17,7 @@ bin/rild
 bin/illumination_service
 bin/qmuxd
 bin/qseecomd
+bin/dxhdcpd
 bin/rmt_storage
 bin/ta2bin
 bin/ta_param_loader
@@ -40,6 +41,12 @@ etc/firmware/dsps.b03
 etc/firmware/dsps.b04
 etc/firmware/dsps.b05
 etc/firmware/dsps.mdt
+etc/firmware/dxhdcp2.b00
+etc/firmware/dxhdcp2.b01
+etc/firmware/dxhdcp2.b02
+etc/firmware/dxhdcp2.b03
+etc/firmware/dxhdcp2.flist
+etc/firmware/dxhdcp2.mdt
 etc/firmware/efs1.mbn
 etc/firmware/efs2.mbn
 etc/firmware/efs3.mbn
@@ -87,6 +94,9 @@ lib/libacdbloader.so
 lib/libals.so
 lib/libaudcal.so
 lib/libcald_client.so
+lib/libDxHdcp.so
+lib/lib_dxhdcp_provisioning.so
+lib/libwfdhdcpcp.so
 lib/libcald_hal.so
 lib/libcald_imageutil.so
 lib/libcald_pal.so
