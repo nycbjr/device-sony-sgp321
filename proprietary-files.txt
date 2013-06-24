@@ -97,7 +97,9 @@ lib/libaudcal.so
 lib/libcald_client.so
 lib/libDxHdcp.so
 lib/lib_dxhdcp_provisioning.so
+lib/lib/libwfdmmsink.so
 lib/libwfdhdcpcp.so
+lib/libhdmi.so
 lib/libcald_hal.so
 lib/libcald_imageutil.so
 lib/libcald_pal.so
