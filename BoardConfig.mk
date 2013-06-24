@@ -21,4 +21,4 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP311
 
-TARGET_KERNEL_CONFIG := bjr_fusion3_pollux_windy_defconfig
+TARGET_KERNEL_CONFIG := cm_fusion3_pollux_windy_defconfig
