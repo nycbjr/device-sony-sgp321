@@ -15,6 +15,8 @@
 # Inherit the common definitions
 $(call inherit-product, device/sony/sgp3xx-common/sgp3xx-common.mk)
 
+BOARD_HAVE_RADIO := false
+
 DEVICE_PACKAGE_OVERLAYS += device/sony/sgp311/overlay
 
 # Device specific part for two-stage boot

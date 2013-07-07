@@ -44,6 +44,6 @@
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
     </string-array>
-    <string name="default_wallpaper_component" translatable="false">com.android.magicsmoke/.MagicSmok</string>
+   <!-- <string name="default_wallpaper_component" translatable="false">com.android.magicsmoke/.MagicSmok</string> -->
 
 </resources>
