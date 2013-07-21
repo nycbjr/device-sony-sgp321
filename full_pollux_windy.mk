@@ -35,7 +35,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/sony/common/resources-xxhdpi.mk)
 
 # Inherit from pollux_windy device
-$(call inherit-product, device/sony/sgp311/sgp311.mk)
+$(call inherit-product, device/sony/pollux_windy/pollux_windy.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_pollux_windy

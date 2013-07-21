@@ -13,10 +13,10 @@
 # limitations under the License.
 
 # inherit from the common pollux definitions
--include device/sony/sgp3xx-common/BoardConfigCommon.mk
+-include device/sony/pollux-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/sony/sgp311/BoardConfigVendor.mk
+-include vendor/sony/pollux_windy/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP311,SGP312,pollux_windy

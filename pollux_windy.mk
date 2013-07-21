@@ -13,14 +13,14 @@
 # limitations under the License.
 
 # Inherit the common definitions
-$(call inherit-product, device/sony/sgp3xx-common/sgp3xx-common.mk)
+$(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
 BOARD_HAVE_RADIO := false
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/sgp311/overlay
+DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
-$(call inherit-product-if-exists, vendor/sony/sgp311/sgp311-vendor.mk)
+$(call inherit-product-if-exists, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
