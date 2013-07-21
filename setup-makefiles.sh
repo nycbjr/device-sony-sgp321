@@ -1,6 +1,6 @@
 #!/bin/sh
 VENDOR=sony
-DEVICE=sgp311
+DEVICE=pollux_windy
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
