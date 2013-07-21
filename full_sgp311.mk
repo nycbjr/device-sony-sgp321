@@ -38,7 +38,7 @@ $(call inherit-product, device/sony/common/resources-xxhdpi.mk)
 $(call inherit-product, device/sony/sgp311/sgp311.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_sgp311
+PRODUCT_NAME := full_pollux_windy
 PRODUCT_DEVICE := pollux_windy
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
