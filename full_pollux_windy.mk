@@ -28,6 +28,11 @@ TARGET_SCREEN_WIDTH := 1920
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
+LOCAL_KERNEL := device/sony/pollux_windy/kernel
+
+PRODUCT_COPY_FILES := \
+        $(LOCAL_KERNEL):kernel
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
  
