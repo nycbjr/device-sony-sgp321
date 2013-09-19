@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit the common definitions
-$(call inherit-product, device/sony/pollux-common/pollux-common.mk)
-
 BOARD_HAVE_RADIO := false
+
+# Inherit the pollux-common definitions
+$(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
@@ -23,4 +23,9 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
-$(call inherit-product-if-exists, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
+# Device specific sysmon_monitor conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
+
+# Include non-opensource parts
+$(call inherit-product, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
